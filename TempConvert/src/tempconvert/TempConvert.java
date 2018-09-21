@@ -5,6 +5,8 @@
  */
 package tempconvert;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Drazen
@@ -15,7 +17,14 @@ public class TempConvert {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        double temp;
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.println("Enter temperature in degrees Celsius:");
+        temp = keyboard.nextDouble();
+        
+        temp = (9.0 / 5.0) * temp + 32.0;
+        System.out.println("The temperature in degrees Fahrenheit is: " + temp);
     }
     
 }
