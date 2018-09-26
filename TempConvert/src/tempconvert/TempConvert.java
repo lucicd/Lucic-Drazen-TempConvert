@@ -20,7 +20,7 @@ public class TempConvert {
         double temp;
         Scanner keyboard = new Scanner(System.in);
         
-        System.out.println("Enter temperature in degrees Celsius:");
+        System.out.println("Please, enter temperature in degrees Celsius:");
         temp = keyboard.nextDouble();
         
         temp = (9.0 / 5.0) * temp + 32.0;
